@@ -25,8 +25,8 @@ jobs:
         uses: josStorer/get-current-time@v2.0.2
         id: current-time
         with:
-          format:YYYY-MM-DDTHH-mm-ss
-        utcOffset: "+09:00"
+          format: YYYY-MM-DDTHH-mm-ss
+          utcOffset: "+09:00"
 
       - name: Set artifact
         run: echo "artifact=$(ls ./build/libs)" >> $GITHUB_ENV
