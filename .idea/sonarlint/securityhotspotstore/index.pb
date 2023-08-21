@@ -79,5 +79,3 @@ Usrc/test/java/me/dyjeong365/springbootdeveloper/controller/BlogApiControllerTes
 Rsrc/main/java/me/dyjeong365/springbootdeveloper/config/WebOAuthSecurityConfig.java,2/e/2e91fb4fdf7525bc1ffe3ad1cfabef2ea37ddd2e
 †
 Vsrc/main/java/me/dyjeong365/springbootdeveloper/config/oauth/OAuth2SuccessHandler.java,6/f/6fbb41089b775282a4e09d62d6893062ae110e44
-H
-.github/workflows/ci.yml,8/9/899ce9c202bf7bb5480e72836c3edc773c9c4244
