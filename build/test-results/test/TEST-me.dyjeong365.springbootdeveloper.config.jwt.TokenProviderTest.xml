@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="me.dyjeong365.springbootdeveloper.config.jwt.TokenProviderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-01-10T02:53:12" hostname="M1.local" time="0.096">
+  <properties/>
+  <testcase name="validToken(): 유효한 토큰인 때에 유효성 검증에 성공한다." classname="me.dyjeong365.springbootdeveloper.config.jwt.TokenProviderTest" time="0.049"/>
+  <testcase name="validToken(): 만료된 토큰인 때에 유효성 검증에 실패한다." classname="me.dyjeong365.springbootdeveloper.config.jwt.TokenProviderTest" time="0.002"/>
+  <testcase name="getAuthentication(): 토큰 기반으로 인증 정보를 가져올 수 있다." classname="me.dyjeong365.springbootdeveloper.config.jwt.TokenProviderTest" time="0.005"/>
+  <testcase name="getUserId(): 토큰으로 유저 ID를 가져올 수 있다." classname="me.dyjeong365.springbootdeveloper.config.jwt.TokenProviderTest" time="0.004"/>
+  <testcase name="generateToken(): 유저 정보와 만료 기간을 전달해 토큰을 만들 수 있다." classname="me.dyjeong365.springbootdeveloper.config.jwt.TokenProviderTest" time="0.033"/>
+  <system-out><![CDATA[2024-01-10T11:53:12.155+09:00  INFO 8439 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [me.dyjeong365.springbootdeveloper.config.jwt.TokenProviderTest]: TokenProviderTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-10T11:53:12.160+09:00  INFO 8439 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration me.dyjeong365.springbootdeveloper.SpringbootDeveloperApplication for test class me.dyjeong365.springbootdeveloper.config.jwt.TokenProviderTest
+Hibernate: 
+    insert 
+    into
+        users
+        (id, email, nickname, password) 
+    values
+        (default, ?, ?, ?)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

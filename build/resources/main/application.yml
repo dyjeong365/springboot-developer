@@ -1,0 +1,41 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+
+  h2:
+    console:
+      enabled: true
+
+  jwt:
+    issuer: dyjeong365@gmail.com
+    secret_key: ${JWT_SECRET_KEY}
+  security:
+    oauth2:
+      client:
+#        provider:
+#          kakao:
+#            authorization-uri: https://kauth.kakao.com/oauth/authorize
+#            token-uri: https://kauth.kakao.com/oauth/token
+#            user-info-uri: https://kapi.kakao.com/v2/user/me
+#            user-name-attribute: id
+
+        registration:
+          google:
+            client-id: ${G_CLIENT_ID}
+            client-secret: ${G_CLIENT_SECRET}
+            scope:
+              - email
+              - profile
+#          kakao:
+#            client-id: ${K_CLIENT_ID}
+#            client-secret: ${K_CLIENT_SECRET}
+#            redirect-uri: http://localhost:8080/login/oauth2/code/kakao
+#            authorization-grant-type: authorization_code
+#            client-name: kakao
+#            scope:
+#              - account_email
+#              - profile_nickname
