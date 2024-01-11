@@ -12,7 +12,7 @@ spring:
 
   jwt:
     issuer: dyjeong365@gmail.com
-    secret_key:
+    secret_key: test
   security:
     oauth2:
       client:
@@ -25,8 +25,8 @@ spring:
 
         registration:
           google:
-            client-id:
-            client-secret:
+            client-id: test
+            client-secret: test
             scope:
               - email
               - profile
