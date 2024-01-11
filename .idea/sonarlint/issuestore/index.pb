@@ -85,3 +85,7 @@ Vsrc/main/java/me/dyjeong365/springbootdeveloper/config/oauth/OAuth2SuccessHandl
 .github,4/c/4c40eab00f24304ca400313319c58d461788ff5e
 H
 .github/workflows/ci.yml,8/9/899ce9c202bf7bb5480e72836c3edc773c9c4244
+7
+gradlew,5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9
+ˆ
+Xsrc/test/java/me/dyjeong365/springbootdeveloper/SpringbootDeveloperApplicationTests.java,0/9/09ea05eb1adc0020cc9c9f46a55f1699438cce62
