@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="me.dyjeong365.springbootdeveloper.controller.TokenApiControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-11T03:32:24" hostname="M1.local" time="0.031">
+<testsuite name="me.dyjeong365.springbootdeveloper.controller.TokenApiControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-11T03:44:43" hostname="M1.local" time="0.021">
   <properties/>
-  <testcase name="createNewAccessToken(): 새로운 엑세스 토큰을 발급한다." classname="me.dyjeong365.springbootdeveloper.controller.TokenApiControllerTest" time="0.031"/>
-  <system-out><![CDATA[2024-01-11T12:32:24.907+09:00  INFO 5051 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [me.dyjeong365.springbootdeveloper.controller.TokenApiControllerTest]: TokenApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T12:32:24.909+09:00  INFO 5051 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration me.dyjeong365.springbootdeveloper.SpringbootDeveloperApplication for test class me.dyjeong365.springbootdeveloper.controller.TokenApiControllerTest
-2024-01-11T12:32:24.914+09:00  INFO 5051 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-01-11T12:32:24.915+09:00  INFO 5051 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-01-11T12:32:24.915+09:00  INFO 5051 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+  <testcase name="createNewAccessToken(): 새로운 엑세스 토큰을 발급한다." classname="me.dyjeong365.springbootdeveloper.controller.TokenApiControllerTest" time="0.021"/>
+  <system-out><![CDATA[2024-01-11T12:44:43.808+09:00  INFO 5685 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [me.dyjeong365.springbootdeveloper.controller.TokenApiControllerTest]: TokenApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-11T12:44:43.809+09:00  INFO 5685 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration me.dyjeong365.springbootdeveloper.SpringbootDeveloperApplication for test class me.dyjeong365.springbootdeveloper.controller.TokenApiControllerTest
+2024-01-11T12:44:43.812+09:00  INFO 5685 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-11T12:44:43.812+09:00  INFO 5685 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-11T12:44:43.813+09:00  INFO 5685 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
 Hibernate: 
     select
         u1_0.id,
