@@ -17,7 +17,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @SpringBootTest
-public class TokenProviderTest {
+class TokenProviderTest {
     @Autowired
     private TokenProvider tokenProvider;
     @Autowired

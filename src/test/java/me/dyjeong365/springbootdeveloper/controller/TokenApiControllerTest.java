@@ -7,6 +7,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Map;
 import me.dyjeong365.springbootdeveloper.config.JwtProperties;
+import me.dyjeong365.springbootdeveloper.config.jwt.JwtFactory;
 import me.dyjeong365.springbootdeveloper.domain.RefreshToken;
 import me.dyjeong365.springbootdeveloper.domain.User;
 import me.dyjeong365.springbootdeveloper.dto.CreateAccessTokenRequest;
@@ -18,17 +19,15 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
-import me.dyjeong365.springbootdeveloper.config.jwt.JwtFactory;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class TokenApiControllerTest {
+class TokenApiControllerTest {
 
     @Autowired
     protected MockMvc mockMvc;
