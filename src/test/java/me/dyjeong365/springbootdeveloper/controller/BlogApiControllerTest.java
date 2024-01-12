@@ -9,6 +9,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.javafaker.Faker;
 import java.security.Principal;
 import java.util.List;
 import me.dyjeong365.springbootdeveloper.domain.Article;
@@ -190,5 +191,52 @@ class BlogApiControllerTest {
                 .author(user.getUsername())
                 .content("content")
                 .build());
+    }
+
+    @DisplayName("addArticle: 아티클 추가할 때 title이 null이면 실패한다.")
+    @Test
+    void addArticleNullValidation() throws Exception {
+        //given
+        String title = null;
+        String url = "/api/articles";
+        String content = "content";
+        final AddArticleRequest userRequest = new AddArticleRequest(title, content);
+        final String requestBody = objectMapper.writeValueAsString(userRequest);
+
+        Principal principal = Mockito.mock(Principal.class);
+        Mockito.when(principal.getName()).thenReturn("username");
+
+        //when
+        ResultActions result = mockMvc.perform(post(url)
+                .contentType(MediaType.APPLICATION_JSON)
+                .principal(principal)
+                .content(requestBody));
+
+        //then
+        result.andExpect(status().isBadRequest());
+    }
+
+    @DisplayName("addArticle: 아티클 추가할 때 title이 10자를 넘으면 실패한다.")
+    @Test
+    void addArticleSizeValidation() throws Exception{
+        //given
+        Faker faker = new Faker();
+
+        final String url = "/api/articles";
+        final String title = faker.lorem().characters(11);
+        final String content = "content";
+        final AddArticleRequest userRequest = new AddArticleRequest(title, content);
+        final String requestBody = objectMapper.writeValueAsString(userRequest);
+        Principal principal = Mockito.mock(Principal.class);
+        Mockito.when(principal.getName()).thenReturn("username");
+
+        //when
+        ResultActions result = mockMvc.perform(post(url)
+                .contentType(MediaType.APPLICATION_JSON)
+                .principal(principal)
+                .content(requestBody));
+
+        //then
+        result.andExpect(status().isBadRequest());
     }
 }
